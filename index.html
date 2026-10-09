@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Web Development Template</title>
+
+    <!-- Kết nối file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <nav class="navbar background">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span>CodeLearn</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Mở menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-list" id="navList">
+                <li><a href="#web">Web Technology</a></li>
+                <li><a href="#program">C Programming</a></li>
+                <li><a href="#java">Java</a></li>
+                <li><a href="#courses">Courses</a></li>
+            </ul>
+
+            <form class="right-nav" id="searchForm">
+                <input type="search"
+                       name="search"
+                       id="search"
+                       placeholder="Tìm kiếm..."
+                       aria-label="Từ khóa tìm kiếm">
+                <button type="submit" class="btn btn-sm">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main id="home">
+
+        <!-- Phần 1: Web Technology -->
+        <section class="first-section" id="web">
+            <div class="box-main">
+                <div class="first-half">
+                    <span class="eyebrow">KHÁM PHÁ THẾ GIỚI CÔNG NGHỆ</span>
+
+                    <h1 class="text-big">
+                        Web Technology
+                    </h1>
+
+                    <p class="text-small">
+                        HTML là viết tắt của HyperText Markup Language,
+                        được sử dụng để xây dựng cấu trúc trang web.
+                        HTML giúp tổ chức văn bản, hình ảnh, liên kết
+                        và nhiều thành phần khác trên trình duyệt.
+                        Khi kết hợp HTML với CSS và JavaScript,
+                        chúng ta có thể tạo ra những website hiện đại,
+                        đẹp mắt và có tính tương tác.
+                    </p>
+
+                    <a href="#courses" class="btn primary-btn">
+                        Khám phá khóa học
+                    </a>
+                </div>
+
+                <div class="first-half image-half">
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <p>index.html</p>
+                        </div>
+
+                        <div class="code-content">
+                            <p><span class="code-purple">&lt;!DOCTYPE</span> html<span class="code-purple">&gt;</span></p>
+                            <p><span class="code-purple">&lt;html&gt;</span></p>
+                            <p class="indent">
+                                <span class="code-purple">&lt;head&gt;</span>
+                            </p>
+                            <p class="indent-2">
+                                <span class="code-green">&lt;title&gt;</span>
+                                My Website
+                                <span class="code-green">&lt;/title&gt;</span>
+                            </p>
+                            <p class="indent">
+                                <span class="code-purple">&lt;/head&gt;</span>
+                            </p>
+                            <p class="indent">
+                                <span class="code-purple">&lt;body&gt;</span>
+                            </p>
+                            <p class="indent-2">
+                                <span class="code-green">&lt;h1&gt;</span>
+                                Hello World!
+                                <span class="code-green">&lt;/h1&gt;</span>
+                            </p>
+                            <p class="indent">
+                                <span class="code-purple">&lt;/body&gt;</span>
+                            </p>
+                            <p><span class="code-purple">&lt;/html&gt;</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần 2: C Programming -->
+        <section class="second-section" id="program">
+            <div class="box-main">
+                <div class="first-half">
+                    <span class="eyebrow">NỀN TẢNG LẬP TRÌNH</span>
+
+                    <h2 class="text-big">C Programming</h2>
+
+                    <p class="text-small">
+                        C là ngôn ngữ lập trình thủ tục được phát triển
+                        bởi Dennis Ritchie. Ngôn ngữ này nổi bật nhờ tốc độ,
+                        khả năng quản lý bộ nhớ và cú pháp tương đối gọn.
+                        C thường được sử dụng trong lập trình hệ thống,
+                        hệ điều hành, trình biên dịch và các ứng dụng
+                        cần hiệu suất cao.
+                    </p>
+
+                    <a href="#courses" class="btn primary-btn">
+                        Tìm hiểu ngôn ngữ C
+                    </a>
+                </div>
+
+                <div class="second-half">
+                    <div class="language-card c-card">
+                        <span class="language-symbol">C</span>
+                        <h3>Programming</h3>
+                        <p>Learn. Practice. Build.</p>
+                        <div class="language-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần 3: Java -->
+        <section class="section java-section" id="java">
+            <div class="paras">
+                <span class="eyebrow">LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG</span>
+
+                <h2 class="section-tag text-big">Java Programming</h2>
+
+                <p class="section-subtag text-small">
+                    Java là ngôn ngữ lập trình phổ biến hỗ trợ lập trình
+                    hướng đối tượng. Mã Java thường được biên dịch thành
+                    bytecode và chạy trên Java Virtual Machine (JVM),
+                    giúp chương trình có thể hoạt động trên nhiều hệ điều
+                    hành có môi trường Java phù hợp. Java được sử dụng
+                    trong ứng dụng doanh nghiệp, phần mềm máy chủ
+                    và phát triển Android.
+                </p>
+
+                <a href="#courses" class="btn dark-btn">
+                    Khám phá Java
+                </a>
+            </div>
+
+            <div class="thumbnail">
+                <div class="java-art">
+                    <span class="java-cup">☕</span>
+                    <span class="java-label">JAVA</span>
+                    <span class="java-caption">Write once, run anywhere</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần 4: CSS -->
+        <section class="section css-section" id="css">
+            <div class="thumbnail">
+                <div class="css-art">
+                    <span class="css-symbol">#</span>
+                    <span class="css-label">CSS</span>
+                    <span class="css-caption">Style your web</span>
+                </div>
+            </div>
+
+            <div class="paras">
+                <span class="eyebrow">THIẾT KẾ GIAO DIỆN</span>
+
+                <h2 class="section-tag text-big">CSS Styling</h2>
+
+                <p class="section-subtag text-small">
+                    CSS là ngôn ngữ dùng để định dạng giao diện trang web.
+                    CSS cho phép thay đổi màu sắc, font chữ, khoảng cách,
+                    kích thước, bố cục và hiệu ứng. Các công cụ như Flexbox
+                    và Grid giúp sắp xếp thành phần linh hoạt trên nhiều
+                    kích thước màn hình.
+                </p>
+
+                <a href="#courses" class="btn dark-btn">
+                    Khám phá CSS
+                </a>
+            </div>
+        </section>
+
+        <!-- Phần 5: Khóa học -->
+        <section class="courses-section" id="courses">
+            <div class="container">
+                <div class="center">
+                    <span class="eyebrow">BẮT ĐẦU HỌC NGAY</span>
+                    <h2 class="text-big">Các chủ đề nổi bật</h2>
+                    <p class="text-small">
+                        Xây dựng nền tảng lập trình của bạn từ những bước đầu tiên.
+                    </p>
+                </div>
+
+                <div class="course-grid">
+                    <article class="course-card">
+                        <div class="course-icon html-icon">5</div>
+                        <h3>HTML cơ bản</h3>
+                        <p>
+                            Tìm hiểu cấu trúc tài liệu HTML, thẻ,
+                            liên kết, hình ảnh và biểu mẫu.
+                        </p>
+                        <a href="#web">Tìm hiểu thêm →</a>
+                    </article>
+
+                    <article class="course-card">
+                        <div class="course-icon c-icon">C</div>
+                        <h3>Lập trình C</h3>
+                        <p>
+                            Học biến, kiểu dữ liệu, điều kiện, vòng lặp,
+                            hàm và mảng trong C.
+                        </p>
+                        <a href="#program">Tìm hiểu thêm →</a>
+                    </article>
+
+                    <article class="course-card">
+                        <div class="course-icon java-icon">J</div>
+                        <h3>Lập trình Java</h3>
+                        <p>
+                            Làm quen với class, object, kế thừa
+                            và các nguyên tắc hướng đối tượng.
+                        </p>
+                        <a href="#java">Tìm hiểu thêm →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="background footer">
+        <div class="footer-content">
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span>CodeLearn</span>
+            </a>
+
+            <p class="text-footer">
+                Copyright © 2026 CodeLearn. All rights reserved.
+            </p>
+
+            <a href="#home" class="back-to-top">Lên đầu trang ↑</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript cho menu và tìm kiếm minh họa -->
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navList = document.getElementById("navList");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navList.classList.toggle("show");
+            menuToggle.setAttribute("aria-expanded", isOpen);
+        });
+
+        // Đóng menu sau khi chọn liên kết trên điện thoại
+        document.querySelectorAll(".nav-list a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navList.classList.remove("show");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        // Tìm kiếm minh họa: cuộn đến phần có nội dung phù hợp
+        document.getElementById("searchForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const keyword = document.getElementById("search")
+                .value.trim().toLowerCase();
+
+            if (!keyword) {
+                alert("Vui lòng nhập từ khóa cần tìm.");
+                return;
+            }
+
+            const sections = document.querySelectorAll("main section");
+            let found = false;
+
+            sections.forEach(function (section) {
+                if (!found && section.textContent.toLowerCase().includes(keyword)) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                alert("Không tìm thấy nội dung phù hợp với từ khóa.");
+            }
+        });
+    </script>
+
+</body>
+</html>
